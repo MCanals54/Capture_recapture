@@ -2,11 +2,11 @@ from random import randint, choice
 import matplotlib.pyplot as plt
 
 def distance(pos) : return pos[0]**2 + pos[1] **2
-def genere() :
-    """ Genere une population de taille aléatoire comprise entre 1000 et 2000
+def genere(N) :
+    """ Genere une population de taille aléatoire comprise entre N/2 et 2*N
         les individus sont non marqués 'b'
     """
-    n = randint(1000,2000)
+    n = randint(N//2,2*N)
     
     return[ [randint(0,400), randint(0,400),'b']  for _ in range(n)]
 
