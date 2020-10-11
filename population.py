@@ -2,6 +2,7 @@ from random import randint, choice, sample
 import matplotlib.pyplot as plt
 plt.rcParams['figure.figsize'] = [15, 10]
 
+
 BIG = 2000
 MEDIUM = 500
 SMALL = 100
